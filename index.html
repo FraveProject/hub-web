@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Nuesto CIPA</title>
+  </head>
+  <body>
+    <div class="main-container">
+
+      <div class="about-us">
+        <div class="text">
+          <h1>¿Quiénes somos?</h1>
+          <p>Somos un grupo de estudiantes de Ingeniería de Software comprometidos con el aprendizaje continuo y el desarrollo de soluciones tecnológicas. A través de nuestros portafolios compartimos proyectos, habilidades y experiencias que reflejan nuestro crecimiento académico y nuestro interés por aportar al mundo del desarrollo de software.</p>
+        </div>
+        </div>
+
+      <div class="team">
+        <div class="window">
+          <h2>Nuestro equipo</h2>
+          <div class="team-grid">
+            <div class="member-card" style="--color: #de87e0">
+              <div class="profile">
+                <img src="img/angie.png" alt="Angie" />
+                <div class="overlay">
+                  <a href="">Ver portafolio</a>
+                </div>
+              </div>
+              <h3>Angie Paola Ciro Ocampo</h3>
+            </div>
+
+            <div class="member-card" style="--color: #e0c487">
+              <div class="profile">
+                <img src="img/antonio.jpeg" alt="Antonio" />
+                <div class="overlay">
+                  <a href="https://antoniodiazm.github.io/Portafolio-Antonio-Diaz-/" target="_blank">Ver portafolio</a>
+                </div>
+              </div>
+              <h3>Antonio José Díaz Mercado</h3>
+            </div>
+
+            <div class="member-card" style="--color: #75c795c2">
+              <div class="profile">
+                <img src="img/fredy.png" alt="Fredy" />
+                <div class="overlay">
+                  <a href="https://fraveproject.github.io/cv-web/" target="_blank">Ver portafolio</a>
+                </div>
+              </div>
+              <h3>Fredy José Alvareza González</h3>
+            </div>
+
+            <div class="member-card" style="--color: #9439d19a">
+              <div class="profile">
+                <img src="img/wilgen.JPG" alt="Wilgen" />
+                <div class="overlay">
+                  <a href="">Ver portafolio</a>
+                </div>
+              </div>
+              <h3>Wilgen Jesús Perez Díaz</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".member-card");
+
+        cards.forEach((card, index) => {
+          setTimeout(() => {
+            card.classList.add("show");
+            card.setoutheight;
+          }, index * 200); // efecto escalonado
+        });
+      });
+    </script>
+  </body>
+</html>

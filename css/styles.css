@@ -1,0 +1,133 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+}
+
+/* Opening Transition */
+
+.member-card{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+
+.member-card.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* About us section */
+
+.text {
+	font-size: 1.2rem;
+	max-width: 1250px;
+	margin: 50px auto 50px;
+	background: #ffffff;
+	padding: 40px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 30px #b3b3b3;
+}
+
+.text h1 {
+	margin-bottom: 20px;
+}
+
+.about-us  {
+	padding: 0px 5%;
+}
+
+/* Team members section */
+
+.window {
+	width: 100%;
+  padding-bottom: 60px;
+  background-color: rgba(255, 255, 255, 0.664);
+	box-shadow: 0px 0px 30px rgba(0,0,0,.4);
+}
+
+.team {
+  text-align: center;
+	margin: 0px 4%;
+}
+
+.team h2 {
+	background: #f3f3f3;
+	padding: 10px 0px;
+	margin-bottom: 30px;
+}
+
+.team-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  justify-content: center;
+	align-items: center;
+	margin: 0px 5%;
+}
+
+.member-card h3 {
+	margin-top: 17px;
+	font-weight: 600;
+	color: #494949;
+}
+
+.profile{
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+  aspect-ratio: 1 / 1;
+}
+
+.profile a {
+  color: azure;
+}
+
+.profile img{
+  width: 100%;
+  display: block;
+  transition: transform 0.4s;
+  object-fit: cover;
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.profile:hover img{
+  transform: scale(1.05);
+}
+
+.profile:hover .overlay{
+  opacity: 1;
+}
+
+/* Borde personalizado */
+
+.member-card:hover .profile {
+  border-color: var(--color);
+  box-shadow: 0 0 40px var(--color);
+}
+
